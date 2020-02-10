@@ -1,9 +1,11 @@
 * {
+  
     box-sizing: border-box;
     background: #444F48;;
 }
 
 .hero-container-1 {
+position: relative;
 width: 375px;
 height: 146px;
 background-color: #263635;
@@ -11,6 +13,7 @@ border-radius: 3px;
 }
 
 .heading-container-1 {
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -69,7 +72,29 @@ color: #846815;
     border-bottom: 3px solid #B48F22;
 }
 
-input[name='radio-group'] {
+.question-1 {
+font-family: ConduitITC TT;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+
+color: #B5B5B5;
+}
+
+/* form selection */
+
+.selection-container-1{
+    flex: auto;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+/* .boxed input {
 -webkit-appearance: none;
 -moz-appearance: none;
 -ms-appearance: none;
@@ -84,10 +109,40 @@ box-shadow:
 border-radius: 5px;
 margin-left:0px;
 margin-right: 0px;
+} */
 
+.boxed input[type="radio"] {
+  display: none;
 }
 
-input label {
-    text-align: center;
+.boxed label {
+display: inline-block;
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+-o-appearance: none;
+width: 315px;
+height: 35px;
+cursor: pointer;
+background: #444F48;
+box-shadow: 
+-3px -3px 6px #4A554E, 
+3px 3px 6px #3C443F;
+border-radius: 5px;
+margin-top: 15px;
+margin-left:0px;
+margin-right: 0px;
+
+font-family: ConduitITC TT;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 37px;
+color: #C7C8CA;
 }
+
+.boxed [type=“radio”]:checked + label {
+border-color: aqua;
+}
+
 
