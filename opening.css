@@ -1,0 +1,113 @@
+body {
+    background-color:#444F48 ;
+}
+
+.herocontainer {
+margin-left: auto;
+margin-right: auto;
+width: 328px;
+height: 416px;
+
+
+background: #263635;
+border-radius: 5px;
+}
+
+.heroheadinggroup {
+display: flex;
+flex-direction: column;
+margin: auto;
+width: 151.76px;
+height: 78.71px;
+
+}
+
+.heroheadinggroup h1{
+
+height: 60.21px;
+font-family: Recoleta;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 20px;
+/* or 77% */
+margin-top: 50px;
+text-align: center;
+
+color: #B5B5B5;
+}
+
+.heroheadinggroup h2 {
+ /* Survival Readiness */
+
+height: 21.52px;
+font-family: Trade Gothic LT Std;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+margin-top:-10px;
+color: #F5F5F5;   
+}
+
+.heroheadinggroup h3 {
+height: 17.72px;
+font-family: Trade Gothic LT Std;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+margin-top:-5px;
+padding-top:0px;
+color: #B48F22;
+}
+
+.herobody {
+flex: auto;
+margin-top:80px;
+margin-left: 0;
+margin-right: 0;
+}
+
+.herobody p {
+
+height: 106px;
+font-family: ConduitITC TT;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 15px;
+/* or 94% */
+
+text-align: center;
+padding-left: 20px;
+padding-right: 20px;
+
+color: #B5B5B5;
+}
+
+.button {
+display: flex;
+flex-direction: row;
+margin: auto;
+width: 164px;
+height: 32px;
+background: #263635;
+box-shadow: -6px -5px 5px #2C3A3A, 6px 5px 5px #21302F;
+border-radius: 5px;
+  
+}
+.button h4{
+font-family: ConduitITC TT;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFC107;
+align-self: center;
+margin: auto;
+
+}
