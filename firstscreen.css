@@ -26,7 +26,7 @@ line-height: 20px;
 text-align: center;
 
 
-color: #A2A2A2;
+color: #BEBEBE;
 }
 
 .heading-container-1 h2 {
@@ -39,7 +39,7 @@ text-align: center;
 margin-top: -10px;
 
 
-color: #F5F5F5;   
+color: #E5E5E5;   
 }
 
 .progress-bar-1 h3 {
@@ -48,6 +48,8 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 14px;
+margin-top: 0px;
+margin-bottom: 0px;
 text-align: center;
 
 color: #846815;
@@ -100,8 +102,6 @@ color: #B5B5B5;
    
 }
 
-
-
 .boxed label {
 display: inline-block;
 -webkit-appearance: none;
@@ -129,15 +129,6 @@ color: #C7C8CA;
 }
 
 
-.boxed input:checked  {
-color: aqua;
-}
-
-
-/* 
-.boxed[type='radio']:checked + label {
-*/
-
 .boxed input[type="radio"] {
   display: none;
 }
@@ -159,6 +150,31 @@ line-height: 37px;
 text-align: center;
 
 color: #F1F1F1;
+}
+
+
+input[type=submit] {
+width: 165px;
+height: 35px;
+left: 96px;
+top: 605px;
+color: #F5F5F5;
+background: #8C7222;
+border: 1px solid #674D0F;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+input[type=submit] {
+width: 165px;
+height: 35px;
+left: 96px;
+top: 605px;
+
+background: #8C7222;
+border: 1px solid #674D0F;
+box-sizing: border-box;
+border-radius: 5px;
 }
 
 
