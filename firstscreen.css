@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  background: #444F48;
+background: #444F48;
 }
 
 .hero-container-1 {
@@ -16,8 +16,7 @@ body {
 }
 
 .heading-container-1 {
-    text-align: center;
- 
+text-align: center;
 }
 
 .heading-container-1 h1 {
@@ -27,8 +26,6 @@ font-weight: 500;
 font-size: 26px;
 line-height: 20px;
 text-align: center;
-
-
 color: #BEBEBE;
 }
 
@@ -40,15 +37,13 @@ font-size: 12px;
 line-height: 14px;
 text-align: center;
 margin-top: -10px;
-
-
 color: #E5E5E5;   
 }
 
 .progress-bar-1 {
-    margin-left:auto;
-    margin-right:auto;
-    max-width: 315px;
+margin-left:auto;
+margin-right:auto;
+max-width: 315px;
 }
 
 .progress-bar-1 h3 {
@@ -60,25 +55,23 @@ line-height: 14px;
 margin-top: 0px;
 margin-bottom: 0px;
 text-align: center;
-
 color: #846815;
 }
 
 .line {
-    width: 315px;
-    height: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-
-    border-bottom: 1px solid #846815;
+width: 315px;
+height: 3px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+border-bottom: 1px solid #846815;
 }
 
 .total-progress{
-    width: 63px;
-    height: 3px;
-    float: left;
-    border-bottom: 3px solid #B48F22;
+width: 63px;
+height: 3px;
+float: left;
+border-bottom: 3px solid #B48F22;
 }
 
 .question {
@@ -94,9 +87,6 @@ text-align: center;
 color: #B5B5B5;
 }
 
-
-
-
 /* form selection */
 
 .main {
@@ -104,12 +94,10 @@ color: #B5B5B5;
 }
 
 .selection-container-1{
-    max-width: 315px;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-   
-   
+max-width: 315px;
+margin-left:auto;
+margin-right:auto;
+text-align: center;   
 }
 
 .boxed label {
@@ -140,7 +128,7 @@ color: #C7C8CA;
 
 
 .boxed input[type="radio"] {
-  display: none;
+display: none;
 }
 
 .input:checked + .label {
@@ -156,9 +144,7 @@ font-weight: bold;
 font-size: 17px;
 line-height: 37px;
 /* identical to box height */
-
 text-align: center;
-
 color: #F1F1F1;
 }
 
