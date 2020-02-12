@@ -8,6 +8,9 @@ body {
 
 .hero-container-1 {
   background-color: #263635;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 330px;
   border-radius: 3px;  
   padding: 10px;
 }
@@ -42,6 +45,12 @@ margin-top: -10px;
 color: #E5E5E5;   
 }
 
+.progress-bar-1 {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 315px;
+}
+
 .progress-bar-1 h3 {
 font-family: ConduitExLtITC TT;
 font-style: normal;
@@ -69,12 +78,7 @@ color: #846815;
     width: 63px;
     height: 3px;
     float: left;
-    margin-left: 30px;
     border-bottom: 3px solid #B48F22;
-}
-
-.main {
-
 }
 
 .question {
