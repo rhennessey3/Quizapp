@@ -39,10 +39,10 @@ function $(id) { // shortcut for document.getElementById
 }
 
 var content = $("content"),
-    questionContainer = $("question"),
+    questionContainer = $("questionContainer"),
     choicesContainer = $("choicesContainer"),
     scoreContainer = $("scoreContainer"),
-    submitBtn = $("submitBtn");
+    submitBtn = $("submit");
 
 function askQuestion() {
     var choices = quiz[currentQuestion].choices,
