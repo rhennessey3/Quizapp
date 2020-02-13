@@ -2,6 +2,9 @@
 
 $(document).ready()
 
+// q's followed by choices followed by an array of values that are aligned with the choices.
+// I want to be able to "weight the value of the choices". this should be added to the end score.
+
 var quiz = [
     {
         "question": "How old are you?",
