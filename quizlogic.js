@@ -14,12 +14,12 @@ $('.button').on('click', event => {
 
 function quizRender() {
     $('.hero-container-1').append(`<div class="progress-bar-1" id="progressbar"><h3>1 of 5</h3><div class="line"></div><div class="total-progress"></div></div>`);
-    $(`body`).find(".openbody").replaceWith(`<main><div class="question" id="questionContainer"><h4>How old are you ?</h4></div><div class="selection-container-1" id="choicesContainer"><form class="boxed"><input class="input" type="radio" id="answer-1" name="quiz" value="x" required /><label class="label" for="answer-1">18-21</label><input class="input" type="radio" id="answer-2" name="quiz" value="x" /><label class="label" for="answer-2">22-30</label><input class="input" type="radio" id="answer-3" name="quiz" value="x"><label class="label" for="answer-3">31-40</label><input class="input" type="radio" id="answer-4" name="quiz" value="x"><label class="label" for="answer-4">40-50</label><input class="input" type="radio" id="answer-5" name="quiz" value="x"><label class="label" for="answer-5">40-50</label><br><br><input type="submit" id="submitquestionBtn" value="Next"></form></div></main>`)
+    $(`body`).find(".openbody").replaceWith(`<main><div class="question" id="questionContainer"><h4>${quiz[i].question}</h4></div><div class="selection-container-1" id="choicesContainer"><form class="boxed"><input class="input" type="radio" id="answer-1" name="quiz" value="x" required /><label class="label" for="answer-1">18-21</label><input class="input" type="radio" id="answer-2" name="quiz" value="x" /><label class="label" for="answer-2">22-30</label><input class="input" type="radio" id="answer-3" name="quiz" value="x"><label class="label" for="answer-3">31-40</label><input class="input" type="radio" id="answer-4" name="quiz" value="x"><label class="label" for="answer-4">40-50</label><input class="input" type="radio" id="answer-5" name="quiz" value="x"><label class="label" for="answer-5">40-50</label><br><br><input type="submit" id="submitquestionBtn" value="Next"></form></div></main>`)
 }
 
 let questionCount = 1
 let playerScore = 0
-
+let i = 0
 // this is iterating through the questions 
 function gettingToNextQuestion(params) {
     $('.boxed').submit(event => {
