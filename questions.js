@@ -29,6 +29,29 @@ var quiz = [
     }
 ];
 
+
+$('.submit').click(event => {
+    quizRender();
+    $('.submit').replaceWith();
+    nextQuestion();
+});
+
+function quizRender() {
+    $('main').find('#opencontainer')
+        .replaceWith(`<h4>${quiz[i]
+            .question}</h3><form class="quizForm">
+            <input type="radio" 
+            name="answer"
+            value="${quiz[i].answers[0]}" 
+            required>${quiz[i].answers[0]}<br><input type="radio" name="answer" 
+            value="${quiz[i].answers[1]}">${quiz[i].answers[1]}<br><input type="radio" name="answer" 
+            value="${quiz[i].answers[2]}">${quiz[i].answers[2]}<br><input type="radio" name="answer" 
+            value="${quiz[i].answers[3]}">${quiz[i].answers[3]}<br><button class='submit'>Submit</button></form>`);
+    quizSubmit();
+    questionCounter();
+    scoreCounter();
+}
+
 // Defining elements
 
 var currentQuestion = 0,
