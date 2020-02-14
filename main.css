@@ -7,25 +7,25 @@ body {
 }
 
 .opencontainer {
+/* holds opening screen data  */
 margin-left: auto;
 margin-right: auto;
 width: 328px;
-/* height: 416px; */
 background: #263635;
 border-radius: 5px;
 }
 
 .openheadinggroup {
+/* holds the heading */
 display: flex;
 flex-direction: column;
 margin: auto;
 width: 151.76px;
 height: 78.71px;
-
 }
 
 .openheadinggroup h1{
-
+/* Zombie Apocalypse */
 height: 60.21px;
 font-family: Recoleta;
 font-style: normal;
@@ -41,7 +41,6 @@ color: #BEBEBE;
 
 .openheadinggroup h2 {
  /* Survival Readiness */
-
 height: 21.52px;
 font-family: Trade Gothic LT Std;
 font-style: normal;
@@ -54,6 +53,7 @@ color: #E5E5E5;
 }
 
 .openheadinggroup h3 {
+/* 1 out of x */
 height: 17.72px;
 font-family: Trade Gothic LT Std;
 font-style: normal;
@@ -67,12 +67,12 @@ color: #B48F22;
 }
 
 .openbody p {
+/* intro paragraph */
 font-family: ConduitRegITC TT;
 font-style: normal;
 font-weight: normal;
 font-size: 17px;
 line-height: 20px;
-/* identical to box height */
 text-align: center;
 color: #B5B5B5;
 flex: auto;
@@ -83,42 +83,6 @@ margin-right: 0;
 
 
 
-.button {
-display: flex;
-flex-direction: row;
-margin: auto;
-padding-top:200px;
-padding-bottom:30px;
-width: 164px;
-height: 32px;
-
-  
-}
-.button h4{
-font-family: ConduitITC TT;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 16px;
-
-color: #FFC107;
-align-self: center;
-margin: auto;
-
-}
-
-input[type=submit] {
-width: 165px;
-height: 35px;
-left: 96px;
-top: 605px;
-color: #F5F5F5;
-background: #8C7222;
-border: 1px solid #674D0F;
-box-sizing: border-box;
-border-radius: 5px;
-}
-
 /*  First screen components */
 .hero-container-1 {
   background-color: #263635;
@@ -127,11 +91,10 @@ border-radius: 5px;
   max-width: 330px;
   border-radius: 3px;  
   padding: 10px;
+  text-align: center;
 }
 
-.heading-container-1 {
-text-align: center;
-}
+
 
 .heading-container-1 h1 {
 font-family: Recoleta;
@@ -202,10 +165,8 @@ color: #B5B5B5;
 }
 
 /* form selection */
-
-.main {
-  
-}
+/* **************
+ *****************/
 
 .selection-container-1{
 max-width: 315px;
@@ -262,6 +223,39 @@ text-align: center;
 color: #F1F1F1;
 }
 
+
+input[type=submit] {
+width: 165px;
+height: 35px;
+left: 96px;
+top: 605px;
+color: #F5F5F5;
+background: #8C7222;
+border: 1px solid #674D0F;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.button {
+display: flex;
+flex-direction: row;
+margin: auto;
+padding-top:200px;
+padding-bottom:30px;
+width: 164px;
+height: 32px;
+}
+
+.button h4{
+font-family: ConduitITC TT;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #FFC107;
+align-self: center;
+margin: auto;
+}
 
 input[type=submit] {
 width: 165px;

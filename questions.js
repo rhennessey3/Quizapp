@@ -3,7 +3,7 @@ $(document).ready()
 var quiz = [
     {
         "question": "How old are you?",
-        "choices": ["18-25", "26-34", "35-46", "46-55", "55+"],
+        "choices": ["18-25", "26-34", "35-46", "46-55", "I'd rather not say"],
         "answer": [20, 18, 16, 10, 5]
     }, {
         "question": "Where do you live?",
