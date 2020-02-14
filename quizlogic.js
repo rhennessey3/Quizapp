@@ -46,12 +46,9 @@ function gettingToNextQuestion(params) {
     $('.boxed').submit(event => {
         event.preventDefault();
         const answer = $('input:checked').val();
-        // 18-25
         let indexChoice = quiz[questionCount - 1].choices.findIndex(choice => choice === answer);
-
-        // => 0
         let answerValue = quiz[questionCount - 1].answer[indexChoice];
-        // 20
+
         playerScore += answerValue;
         if (questionCount > 4) {
             endTheGame();
@@ -63,14 +60,13 @@ function gettingToNextQuestion(params) {
 }
 
 function endTheGame() {
-    $(".heading-container-1").append(`<h6>${playerScore}</h6>`);
+    $(".heading-container-1").append(`<h6>${playerScore}%</h6>`);
     $(".openbody").hide();
     $('.hideOnDone').hide();
+    $('#finishscreen').show();
 }
 
-// when we hit next button 
-// - new question loads
-// -new set of answers load
-// -player score gets added to previous
+
+
 
 

@@ -69,6 +69,17 @@ padding-top:0px;
 color: #B48F22;
 }
 
+.heading-container-1 h6{
+ font-family: Recoleta;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 0px;
+margin-top:0px;
+padding-top:10px;
+color: #B48F22;
+}
+
 .openbody p {
 /* intro paragraph */
 padding: 20px;
@@ -282,3 +293,11 @@ border: 1px solid #674D0F;
 box-sizing: border-box;
 border-radius: 5px;
 }
+
+#finishscreen{
+  display:none;
+}
+
+
+
+
