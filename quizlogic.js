@@ -1,3 +1,5 @@
+$(document).ready()
+
 $('.button').on('click', event => {
     quizRender();
     $('.button').replaceWith();
@@ -5,12 +7,12 @@ $('.button').on('click', event => {
 });
 
 function quizRender() {
-    let i = questionCount -1; 
+    let i = questionCount - 1;
     $('#statusbar')
         .html(`<div class="progress-bar-1" id="progressbar">` +
-        `<h3 class="hideOnDone">${questionCount} of 5</h3>` + 
-        `<div class="line"></div><div class="hideOnDone total-progress total-progress-${questionCount}"></div>` +
-        `</div>`);
+            `<h3 class="hideOnDone">${questionCount} of 5</h3>` +
+            `<div class="line"></div><div class="hideOnDone total-progress total-progress-${questionCount}"></div>` +
+            `</div>`);
     $(".openbody")
         .html(`
         <main>
@@ -33,10 +35,10 @@ function quizRender() {
           </form>
         </div>
       </main>`);
-      gettingToNextQuestion(); 
+    gettingToNextQuestion();
 }
 
-let questionCount = 5 // Current question
+let questionCount = 1 // Current question
 let playerScore = 0
 
 // this is iterating through the questions 
@@ -46,31 +48,29 @@ function gettingToNextQuestion(params) {
         const answer = $('input:checked').val();
         // 18-25
         let indexChoice = quiz[questionCount - 1].choices.findIndex(choice => choice === answer);
-        
+
         // => 0
         let answerValue = quiz[questionCount - 1].answer[indexChoice];
         // 20
-        playerScore += answerValue; 
-        if (questionCount > 4){
-           endTheGame();  
+        playerScore += answerValue;
+        if (questionCount > 4) {
+            endTheGame();
         } else {
-          questionCount++; 
-          quizRender(); 
+            questionCount++;
+            quizRender();
         }
     })
 }
 
-function endTheGame(){
-  $(".heading-container-1").append(`<h6>${playerScore}</h6>`); 
-  $(".openbody").hide();
-  $('.hideOnDone').hide(); 
+function endTheGame() {
+    $(".heading-container-1").append(`<h6>${playerScore}</h6>`);
+    $(".openbody").hide();
+    $('.hideOnDone').hide();
 }
 
 // when we hit next button 
 // - new question loads
 // -new set of answers load
 // -player score gets added to previous
-
-
 
 
