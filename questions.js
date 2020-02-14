@@ -1,5 +1,3 @@
-$(document).ready()
-
 var quiz = [
     {
         "question": "How old are you?",
