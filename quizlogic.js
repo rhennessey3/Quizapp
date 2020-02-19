@@ -13,7 +13,8 @@ function quizRender() {
             `<h3 class="hideOnDone">${questionCount} of 5</h3>` +
             `<div class="line"></div><div class="hideOnDone total-progress total-progress-${questionCount}"></div>` +
             `</div>`);
-    $(".openbody")
+    $(".openbody").hide();
+    $("#questionwrapper")
         .html(`
         <main>
           <div class="question" id="questionContainer">
@@ -61,12 +62,22 @@ function gettingToNextQuestion(params) {
 
 function endTheGame() {
     $(".heading-container-1").append(`<h6>${playerScore}%</h6>`);
+    $("#questionwrapper").hide();
     $(".openbody").hide();
     $('.hideOnDone').hide();
     $('#finishscreen').show();
+    $("#finishscreen").append(`<h5>By strict scientific evidence we find that you are ${playerScore}% likely to survive.</h4>`)
+    $("#finishscreen").append(`<button id="finishBtn">Try your fate again</button>`)
+
 }
 
-
+function testYourFateAgain() {
+    $('#finishBtn').on('click', '.retry', event => {
+        quizRender();
+        $('.button').replaceWith();
+        console.log('click');
+    })
+}
 
 
 
