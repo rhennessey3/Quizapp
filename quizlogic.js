@@ -72,12 +72,14 @@ function endTheGame() {
 }
 
 function testYourFateAgain() {
-    $('#finishBtn').on('click', '.retry', event => {
+    $('.finishBtn').on('click', '.retry', event => {
+        questionCount = 1;
+        score = 0;
         quizRender();
         $('.button').replaceWith();
         console.log('click');
     })
 }
 
-
-
+// https://repl.it/@akiva1/ScientificHardtofindMozbot
+// https://repl.it/@RichardHennesse/quiz-app-finishing
