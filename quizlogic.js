@@ -75,7 +75,7 @@ function testYourFateAgain() {
     $('#finishBtn').on('click', event => {
         questionCount = 1;
         score = 0;
-        $('#finishscreen').hide();
+        $('#finishscreen').empty().hide();
         $('#questionwrapper').show();
         $(".heading-container-1").find('h6').remove();
         quizRender();
