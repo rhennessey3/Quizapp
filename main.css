@@ -97,8 +97,6 @@ padding: 20px;
     margin-right: 0;
 }
 
-
-
 /*  First screen components */
 .hero-container-1 {
   background-color: #263635;
@@ -109,8 +107,6 @@ padding: 20px;
   padding: 10px;
   text-align: center;
 }
-
-
 
 .heading-container-1 h1 {
 font-family: Recoleta;
@@ -227,7 +223,6 @@ line-height: 37px;
 color: #C7C8CA;
 }
 
-
 .boxed input[type="radio"] {
 display: none;
 }
@@ -248,7 +243,6 @@ line-height: 37px;
 text-align: center;
 color: #F1F1F1;
 }
-
 
 input[type=submit] {
 width: 165px;

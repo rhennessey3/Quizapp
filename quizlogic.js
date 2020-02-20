@@ -72,12 +72,15 @@ function endTheGame() {
 }
 
 function testYourFateAgain() {
-    $('.finishBtn').on('click', '.retry', event => {
+    $('#finishBtn').on('click', event => {
         questionCount = 1;
         score = 0;
+        $('#finishscreen').hide();
+        $('#questionwrapper').show();
+        $(".heading-container-1").find('h6').remove();
         quizRender();
         $('.button').replaceWith();
-        console.log('click');
+        console.log('clicked');
     })
 }
 
