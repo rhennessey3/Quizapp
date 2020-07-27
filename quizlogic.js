@@ -66,7 +66,7 @@ function endTheGame() {
     $(".openbody").hide();
     $('.hideOnDone').hide();
     $('#finishscreen').show();
-    $("#finishscreen").append(`<h5>By strict scientific evidence we find that you are ${playerScore}% likely to survive.</h4>`)
+    $("#finishscreen").append(`<h5>By strict sudo-scientific evidence we find that you are ${playerScore}% likely to survive.</h4>`)
     $("#finishscreen").append(`<button id="finishBtn">Try your fate again</button>`)
 
 }
