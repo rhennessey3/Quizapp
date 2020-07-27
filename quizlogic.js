@@ -3,7 +3,6 @@ $(document).ready()
 $('.button').on('click', event => {
     quizRender();
     $('.button').replaceWith();
-    console.log('click');
 });
 
 function quizRender() {
@@ -68,12 +67,12 @@ function endTheGame() {
     $('#finishscreen').show();
     $("#finishscreen").append(`<h5>By strict sudo-scientific evidence we find that you are ${playerScore}% likely to survive.</h4>`)
     $("#finishscreen").append(`<button id="finishBtn">Try your fate again</button>`)
-
+    testYourFateAgain()
 }
 
 function testYourFateAgain() {
     $('#finishBtn').on('click', event => {
-        questionCount = 1;
+        questionCount = 0;
         score = 0;
         $('#finishscreen').empty().hide();
         $('#questionwrapper').show();
