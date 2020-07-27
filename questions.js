@@ -9,7 +9,7 @@ var quiz = [
         "answer": [4, 8, 12, 16, 20]
     }, {
         "question": "How would you rate your physical condition?",
-        "choices": ["Ultra runner", "Marathon runner", "I like to run", "Whats running?"],
+        "choices": ["Ultra runner", "Marathon runner", "I like to run", "Whats running?", "I'm more of a moon-walker"],
         "answer": [20, 16, 12, 8, 4]
     }, {
         "question": "Rate your food preperation skills",
