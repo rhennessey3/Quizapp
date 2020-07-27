@@ -72,7 +72,7 @@ function endTheGame() {
 
 function testYourFateAgain() {
     $('#finishBtn').on('click', event => {
-        questionCount = 0;
+        questionCount = 1;
         score = 0;
         $('#finishscreen').empty().hide();
         $('#questionwrapper').show();
