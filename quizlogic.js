@@ -74,12 +74,14 @@ function testYourFateAgain() {
     $('#finishBtn').on('click', event => {
         questionCount = 1;
         score = 0;
-        $('#finishscreen').empty().hide();
-        $('#questionwrapper').show();
+        // $('#finishscreen').empty().hide();
+        $('#finishscreen').hide();
+        $(".openbody").show();
+        $("#finishscreen").append(`<button id="finishBtn">Try your fate again</button>`)
+        $('#questionwrapper').hide();
         $(".heading-container-1").find('h6').remove();
-        quizRender();
+        // quizRender();
+        // console.log(testYourFateAgain)
     })
 }
 
-// https://repl.it/@akiva1/ScientificHardtofindMozbot
-// https://repl.it/@RichardHennesse/quiz-app-finishing
