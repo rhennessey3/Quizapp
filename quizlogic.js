@@ -1,4 +1,4 @@
-$(document).ready()
+// $(document).ready()
 
 $('.button').on('click', event => {
     quizRender();
@@ -78,8 +78,6 @@ function testYourFateAgain() {
         $('#questionwrapper').show();
         $(".heading-container-1").find('h6').remove();
         quizRender();
-        $('.button').replaceWith();
-        console.log('clicked');
     })
 }
 
