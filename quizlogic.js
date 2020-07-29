@@ -1,6 +1,6 @@
 // $(document).ready()
 
-$('.button').on('click', event => {
+$('body').on('click', ".button", event => {
     quizRender();
     $('.button').replaceWith();
 });
@@ -65,8 +65,7 @@ function endTheGame() {
     $(".openbody").hide();
     $('.hideOnDone').hide();
     $('#finishscreen').show();
-    $("#finishscreen").append(`<h5>By strict sudo-scientific evidence we find that you are ${playerScore}% likely to survive.</h4>`)
-    $("#finishscreen").append(`<button id="finishBtn">Try your fate again</button>`)
+    $("#finishscreen").html(`<h5>By strict sudo-scientific evidence we find that you are ${playerScore}% likely to survive.</h4><button id="finishBtn">Try your fate again</button>`)
     testYourFateAgain()
 }
 
@@ -74,14 +73,13 @@ function testYourFateAgain() {
     $('#finishBtn').on('click', event => {
         questionCount = 1;
         score = 0;
-        // $('#finishscreen').empty().hide();
         $('#finishscreen').hide();
         $(".openbody").show();
-        $("#finishscreen").append(`<button id="finishBtn">Try your fate again</button>`)
-        $('#questionwrapper').hide();
+        $("#questionwrapper").html(`<button class="button finishBtn">Test your readiness</button>`)
+        $('#questionwrapper').show();
+        // $('')
         $(".heading-container-1").find('h6').remove();
-        // quizRender();
-        // console.log(testYourFateAgain)
     })
 }
+
 

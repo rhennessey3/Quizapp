@@ -319,6 +319,20 @@ box-sizing: border-box;
 border-radius: 5px;
 }
 
+.finishBtn  {
+position:absolute;
+left:50%;
+margin-left:-83px;
+width: 165px;
+height: 35px;
+text-align: center;
+color: #F5F5F5;
+background: #8C7222;
+border: 1px solid #674D0F;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
 #finishscreen img {
 position:absolute;
 left:50%;
