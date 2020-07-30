@@ -75,7 +75,7 @@ function testYourFateAgain() {
         score = 0;
         $('#finishscreen').hide();
         $(".openbody").show();
-        $("#questionwrapper").html(`<button class="button finishBtn">Test your readiness</button>`)
+        $("#questionwrapper").html(`<button class="button finishBtn"><h4>Test your readiness</h4></button>`)
         $('#questionwrapper').show();
         // $('')
         $(".heading-container-1").find('h6').remove();
