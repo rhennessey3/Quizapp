@@ -262,7 +262,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 16px;
-color: #FFC107;
+/* color: #FFC107; */
 align-self: center;
 margin: auto;
 }
@@ -303,7 +303,21 @@ text-align: center;
 color: #F5F5F5;
 background: #8C7222;
 border: 1px solid #674D0F;
-box-sizing: border-box;
+
+border-radius: 5px;
+}
+
+.button.button.finishBtn  {
+cursor: pointer;
+left:150%;
+margin-left:97px;
+width: 165px;
+height: 35px;
+text-align: center;
+color: #F5F5F5;
+background: #8C7222;
+border: 1px solid #674D0F;
+
 border-radius: 5px;
 }
 
